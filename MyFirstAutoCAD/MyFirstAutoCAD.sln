@@ -9,7 +9,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab2", "Lab2\Lab2.csproj", 
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Lab3", "Lab3\Lab3.csproj", "{A14313B7-D520-4884-8691-25D2962AE25D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WinformPalette", "WinformPalette\WinformPalette.csproj", "{9D1D4BAE-82B1-40DC-871F-341E1EA00C01}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinformPalette", "WinformPalette\WinformPalette.csproj", "{9D1D4BAE-82B1-40DC-871F-341E1EA00C01}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WpfPalette", "WpfPalette\WpfPalette.csproj", "{091C6ACE-E590-41D2-8CCD-259CE01B4360}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,14 @@ Global
 		{9D1D4BAE-82B1-40DC-871F-341E1EA00C01}.Release|Any CPU.Build.0 = Release|Any CPU
 		{9D1D4BAE-82B1-40DC-871F-341E1EA00C01}.Release|x64.ActiveCfg = Release|Any CPU
 		{9D1D4BAE-82B1-40DC-871F-341E1EA00C01}.Release|x64.Build.0 = Release|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Debug|x64.ActiveCfg = Debug|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Debug|x64.Build.0 = Debug|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Release|Any CPU.Build.0 = Release|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Release|x64.ActiveCfg = Release|Any CPU
+		{091C6ACE-E590-41D2-8CCD-259CE01B4360}.Release|x64.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

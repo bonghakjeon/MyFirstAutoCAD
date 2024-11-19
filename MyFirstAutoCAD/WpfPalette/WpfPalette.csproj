@@ -1,0 +1,42 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net8.0-windows</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+	<UseWPF>true</UseWPF>
+	<CopyLocalLockFileAssemblies>true</CopyLocalLockFileAssemblies>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Reference Include="accoremgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\accoremgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcCui">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\AcCui.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Acdbmgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\acdbmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="Acmgd">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\acmgd.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AcWindows">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\AcWindows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+    <Reference Include="AdWindows">
+      <HintPath>C:\Program Files\Autodesk\AutoCAD 2025\AdWindows.dll</HintPath>
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+
+  <Target Name="PostBuild" AfterTargets="PostBuildEvent">
+    <Exec Command="copy /y &quot;$(TargetPath)&quot; &quot;C:\Users\bhjeon\AppData\Roaming\Autodesk\ApplicationPlugins\WpfPalette.bundle\$(TargetFileName)&quot;" />
+  </Target>
+
+</Project>
